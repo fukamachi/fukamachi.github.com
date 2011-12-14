@@ -69,8 +69,8 @@ p {
   height: 240px;
   margin: 5px;
   padding: 20px;
-  border: 1px solid gray;
-  box-shadow: 1px 1px 3px #000;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 3px #888;
   position: relative;
 }
 
