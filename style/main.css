@@ -190,3 +190,7 @@ dd {
   text-decoration: none;
   color: #454545;
 }
+
+#donation a {
+  color: #88ddff;
+}
