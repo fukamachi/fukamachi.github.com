@@ -70,9 +70,9 @@ p {
   margin: 5px;
   padding: 20px;
   border: 1px solid #ccc;
-  -moz-box-shadow: 1px 1px 5px #888;
-  -webkit-box-shadow: 1px 1px 5px #888;
-  box-shadow: 1px 1px 5px #888;
+  -moz-box-shadow: 1px 1px 3px #ccc;
+  -webkit-box-shadow: 1px 1px 3px #ccc;
+  box-shadow: 1px 1px 3px #ccc;
   position: relative;
 }
 
