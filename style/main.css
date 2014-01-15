@@ -3,19 +3,24 @@
 body {
   color: #454545;
   line-height: 130%;
-  font-family: 'Trebuchet MS', 'Arial', 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-family: 'Open Sans', 'Arial', 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 140%;
+}
+
+a {
+  text-decoration: none;
 }
 
 a:link {
-	color: #005585;
+  color: #256fba;
 }
 
 a:visited {
-	color: #485270;
+  color: #458fda;
 }
 
-a:hover {
-	color: #b83800;
+.entry a:hover {
+  text-decoration: underline;
 }
 
 a img {
@@ -27,67 +32,36 @@ p {
 }
 
 #container {
-  width: 876px;
+  width: 700px;
   margin: 0 auto;
 }
 
 #header {
   display: block;
   width: 100%;
-  height: 180px;
+  height: 100px;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 #footer {
-  display: block;
-  clear: both;
-  width: 100%;
   height: 80px;
+  margin-top: 100px;
+  text-align: center;
+  color: #888;
 }
 
-#header h1 {
-  font-size: 34px;
+h2 {
+  margin: 55px 0 20px 0;
+  line-height: 130%;
 }
 
-#header h1:before {
-  content: url(../images/profile.png);
-  position: relative;
-  left: -13px;
-  top: 15px;
+h2 a {
+  color: #454545 !important;
 }
 
 .section {
   clear: both;
-}
-
-.box {
-  clear: none !important;
-  display: block;
-  float: left;
-  width: 240px;
-  height: 240px;
-  margin: 5px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  -moz-box-shadow: 1px 1px 3px #ccc;
-  -webkit-box-shadow: 1px 1px 3px #ccc;
-  box-shadow: 1px 1px 3px #ccc;
-  position: relative;
-}
-
-.box:nth-child(2n) {
-  background-color: white;
-}
-.box:nth-child(2n+1) {
-  background-color: #444;
-  color: white;
-}
-
-.box h2 {
-  margin: 0 0 15px 0;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #ccc;
 }
 
 a.icon {
@@ -98,105 +72,176 @@ a.icon {
   margin-right: 5px;
 }
 
-#about img {
-  display: block;
-  float: left;
-  margin-right: 10px;
+#about {
+  text-align: center;
 }
 
-#photo-gallery {
-  width: 480px;
-  background-color: #444;
-  color: white;
+#about .name {
+  font-size: 110%;
 }
 
-ul.gallery {
-  list-style: none;
-  margin: 6px 20px;
-  padding: 0;
-}
-ul.gallery li {
-  display: block;
-  position: relative;
-  float: left;
-	-webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
-}
-ul.gallery li a {
-  float: left;
-  padding: 5px 5px 12px 5px;
-  background: #eee;
-  border: 1px solid #fff;
-  -moz-box-shadow: 0px 2px 15px #333;
-  -webkit-box-shadow: 0px 2px 15px #333;
-  box-shadow: 0px 2px 15px #333;
-  margin: 6px;
+#about .name .english {
+  color: #bbb;
+  font-size: 80%;
+  font-style: italic;
 }
 
-ul.gallery li .mask {
-	width: 100%;
-	background-color: #444;
-	position: absolute;
-	height: 100%;
-	opacity: 0.4;
-	cursor: pointer;
-	-webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
-}
-ul.gallery li:hover {
-  -webkit-transform: scale(1.8);
-  -moz-transform: scale(1.8);
-  -o-transform: scale(1.8);
-  -ms-transform: scale(1.8);
-  -moz-box-shadow:0px 0px 30px #ccc;
-  -webkit-box-shadow:0px 0px 30px #ccc;
-  box-shadow:0px 0px 30px #ccc;
-  z-index: 1;
-}
-ul.gallery li:hover .mask {
-  height: 0%;
-  width: 0%;
-	margin-left: 73px;
-	margin-top: 55px;
-}
-
-#works {
-  width: 292px;
-  background-color: white;
-  color: #454545;
-}
-
-#donation {
-  width: 532px;
-}
-
-dl {
-  margin: 2px 0 10px 5px;
-}
-dt {
-  font-size: 18px;
-  float: left;
-}
-dd {
-  font-size: 15px;
-  text-align: right;
+#about p {
+  font-size: 90%;
   color: #666;
 }
 
-#works .footer {
-  text-align: right;
-  font-size: x-small;
+#service-links {
+  margin-top: 40px;
+  text-align: center;
 }
 
-#works dt a {
+#service-links ul {
+  padding: 0;
+}
+
+#service-links ul li {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
+
+#service-links ul li img {
+  height: 40px;
+}
+
+#works dl {
+  margin-left: 0.5em;
+}
+
+#works dl dt {
+  font-size: 120%;
+  height: 35px;
+}
+
+#works dl dt a {
+  color: #555;
   text-decoration: none;
-  color: #454545;
+  font-weight: bold;
 }
 
-#donation a {
-  color: #88ddff;
+#works dl dd {
+  color: #888;
+}
+
+#works .repos-list {
+  margin-top: 40px;
+}
+
+#works .starred {
+  display: inline-block;
+  margin-left: 15px;
+  position: relative;
+  top: -3px;
+}
+
+#works .starred img {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  opacity: 0.4;
+}
+
+#works .starred-count {
+  display: inline-block;
+  position: relative;
+  min-width: 25px;
+  margin-left: 10px;
+  padding: 0 4px;
+  text-align: center;
+  font-size: 65%;
+  color: #aaa;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+}
+
+#works .starred-count:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -6px;
+  width: 6px;
+  height: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-top: 2px solid #d0d0d0;
+  border-left: 2px solid #d0d0d0;
+  background: #fff;
+}
+
+.feed .entry {
+  margin-bottom: 20px;
+}
+
+.feed .entry .entry-date {
+  font-size: 75%;
+  color: #aaa;
+}
+.feed .entry .entry-body {
+  color: #888;
+  font-size: 90%;
+  margin-left: 0.5em;
+}
+.feed .entry .entry-bookmark-count {
+  display: inline-block;
+  margin-left: 15px;
+  position: relative;
+  top: 2px;
+}
+
+@media (max-width: 767px) {
+  #container {
+    width: 90%;
+  }
+
+  #header {
+    padding-top: 40px;
+  }
+
+  #service-links {
+    margin-top: 30px;
+  }
+
+  h2 {
+    margin: 30px 0 10px 0;
+  }
+
+  .feed .entry .entry-body {
+    max-height: 4em;
+    overflow: hidden;
+    margin-left: 0;
+    position: relative;
+  }
+  .feed .entry .entry-body:after {
+    content: '…';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1.1em;
+    background: #fff;
+  }
+
+  #works dl {
+    margin-left: 0;
+  }
+
+  #works dl dd {
+    margin-left: 0.5em;
+  }
+
+  #works .starred {
+    margin-left: 8px;
+  }
+
+  #works .repos-list {
+    margin-top: 20px;
+  }
 }

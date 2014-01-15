@@ -3,157 +3,131 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>fukamachi's portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>fukamachi’s portfolio</title>
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="stylesheet" href="style/main.css" type="text/css" media="screen, tv, print" charset="UTF-8" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript" src="javascripts/main.js"></script>
 </head>
 <body>
 <div id="container">
 
 <div id="header">
-  <h1>fukamachi's portfolio</h1>
+  <img src="images/profile.png" alt="fukamachi’s portfolio" />
 </div>
 
 <div id="content">
 
-<div id="about" class="section box">
-  <h2>About Me</h2>
-
-  <p><strong>Eitarow Fukamachi</strong></p>
-  <p>I'm a web application engineer.</p>
-  <p>I was born at Fukuoka, Japan in 1987 and live in Kyoto now.</p>
-
-  <img src="images/me2.jpg" alt="Me" width="84px" height="74px" />
+<div id="about" class="section">
+  <div class="name">
+    深町英太郎<br/>
+    <span class="english">Eitarow Fukamachi</span>
+  </div>
+  <p>
+    I’m a web application engineer based in Tokyo, Japan.
+  </p>
 </div>
 
-<div id="programming" class="section box">
-  <h2>Programming</h2>
-
-  <p>I love programming.</p>
-
-  <p>Especially in Common Lisp, my favorite language.</p>
-
-  <p>I've written <a href="http://clacklisp.org/" target="_blank">Clack</a>, <a href="http://quickdocs.org/" target="_blank">Quickdocs</a> and many other Common Lisp products.</p>
-
-  <a class="icon" href="https://github.com/fukamachi" target="_blank"><img src="images/github-icon.jpg" width="48px" height="48px" alt="GitHub" title="See other products on GitHub." /></a>
-  <a class="icon" href="http://blog.8arrow.org/" target="_blank"><img src="images/hateblo-icon.png" width="48px" height="48px" alt="Tech Blog" title="Tech Blog" /></a>
-  <img style="position: absolute; bottom: 10px; right: 20px;" src="images/me.jpg" alt="Me" width="112px" height="75px" />
-
-</div>
-
-<div id="hobby" class="section box">
-  <h2>Writing &amp; Photo</h2>
-
-  <p>I'm also interested in writing some blogs and taking photos.</p>
-
-  <a class="icon" href="http://nitro-idiot.hatenablog.com/" target="_blank"><img src="images/hateblo-icon.png" width="48px" height="48px" alt="Diary" title="Diary" /></a>
-  <a class="icon" href="http://f.hatena.ne.jp/nitro_idiot/" title="Photo"><img src="images/fotolife-icon.png" width="48px" height="48px" alt="Photo" title="Photo"/></a>
-
-  <img style="position: absolute; bottom: 20px; right: 20px;" src="images/me3.jpg" alt="Me" width="84px" height="126px" />
-</div>
-
-<div id="photo-gallery" class="section box">
-  <ul id="photo-gallery-wrapper" class="gallery">
-    <li>
-      <div class="mask"></div>
-      <a href="http://f.hatena.ne.jp/nitro_idiot/20110625095304" target="_blank">
-        <img src="images/photo/20110625095304.jpg" width="120px" height="80px" />
-      </a>
-    </li>
-    <li>
-      <div class="mask"></div>
-      <a href="http://f.hatena.ne.jp/nitro_idiot/20110827120333" target="_blank">
-        <img src="images/photo/20110827120333.jpg" width="120px" height="80px" />
-      </a>
-    </li>
-    <li>
-      <div class="mask"></div>
-      <a href="http://f.hatena.ne.jp/nitro_idiot/20110827145342" target="_blank">
-        <img src="images/photo/20110827145342.jpg" width="120px" height="80px" />
-      </a>
-    </li>
-    <li>
-      <div class="mask"></div>
-      <a href="http://f.hatena.ne.jp/nitro_idiot/20110828095255" target="_blank">
-        <img src="images/photo/20110828095255.jpg" width="120px" height="80px" />
-      </a>
-    </li>
-    <li>
-      <div class="mask"></div>
-      <a href="http://f.hatena.ne.jp/nitro_idiot/20110828124819" target="_blank">
-        <img src="images/photo/20110828124819.jpg" width="120px" height="80px" />
-      </a>
-    </li>
-    <li>
-      <div class="mask"></div>
-      <a href="http://f.hatena.ne.jp/nitro_idiot/20110828131109" target="_blank">
-        <img src="images/photo/20110828131109.jpg" width="120px" height="80px" />
-      </a>
-    </li>
+<div id="service-links">
+  <ul>
+    <li><a href="https://github.com/fukamachi" target="_blank"><img src="images/github-icon.png" alt="GitHub" /></a></li>
+    <li><a href="http://nitro-idiot.hatenablog.com/" target="_blank"><img src="images/hatenablog-icon.png" alt="Hatena Blog" /></a></li>
+    <li><a href="https://twitter.com/nitro_idiot" target="_blank"><img src="images/twitter-icon.png" alt="Twitter" /></a></li>
   </ul>
 </div>
 
-<div id="works" class="section box">
-  <h2>Works</h2>
-  <dl>
-    <dt><a href="http://clacklisp.org/" target="_blank">Clack</a></dt>
-    <dd>Web application environment</dd>
-  </dl>
-  <dl>
-    <dt><a href="http://fukamachi.github.io/ningle/" target="_blank">ningle</a></dt>
-    <dd>A super micro web framework</dd>
-  </dl>
-  <dl>
-    <dt><a href="http://fukamachi.github.io/cl-dbi/" target="_blank">CL-DBI</a></dt>
-    <dd>DB independent interface</dd>
-  </dl>
-  <dl>
-    <dt><a href="http://fukamachi.github.io/cl-test-more/" target="_blank">CL-TEST-MORE</a></dt>
-    <dd>Unit testing framework</dd>
-  </dl>
-  <dl>
-    <dt><a href="http://quickdocs.org/" target="_blank">Quickdocs</a></dt>
-    <dd>Lisp documentation hosting</dd>
-  </dl>
-  <dl>
-    <dt><a href="http://shlyfile.org" target="_blank">Shelly</a></dt>
-    <dd>A tool to run Lisp in shell</dd>
-  </dl>
-  <div class="footer">
-    <a href="https://github.com/fukamachi/" target="_blank">See other products on GitHub</a>
+<div id="tech-blog">
+  <h2><a href="http://blog.8arrow.org/">Technical Blog</a></h2>
+  <div class="feed">
+    <script type="text/javascript">loadFeed('http://blog.8arrow.org/feed', 'tech-blog');</script>
+    <noscript>
+      <ul>
+        <li><a href="http://blog.8arrow.org/">八発白中</a></li>
+      </ul>
+    </noscript>
   </div>
 </div>
 
-<div id="contact" class="section box">
-  <h2>Contact</h2>
-
-  <p>Interested and wanna talk?</p>
-
-  <p>Let me know.</p>
-
-  <a class="icon" href="mailto:e&#46;arrows&#64;gmail&#46;com"><img src="images/gmail-icon.png" title="GMail (e&#46;arrows&#64;gmail&#46;com)" width="48px" height="48px" /></a>
-  <a class="icon" href="https://twitter.com/nitro_idiot" target="_blank"><img src="images/twitter-icon.png" title="Twitter (@nitro_idiot)" width="48px" height="48px" /></a>
+<div id="diary">
+  <h2><a href="http://nitro-idiot.hatenablog.com/">Diary</a></h2>
+  <div class="feed">
+    <script type="text/javascript">loadFeed('http://nitro-idiot.hatenablog.com/feed', 'diary');</script>
+    <noscript>
+      <ul>
+        <li><a href="http://nitro-idiot.hatenablog.com/">nitro_idiot’s diary</a></li>
+      </ul>
+    </noscript>
+  </div>
 </div>
 
-<div id="donation" class="section box">
-  <h2>Donation</h2>
+<div id="works" class="section">
+  <h2>Common Lisp Products</h2>
+  <div class="repos-list">
+  <dl id="repos-clack" class="repos" data-repos-name="fukamachi/clack">
+    <dt>
+      <a href="http://clacklisp.org/">Clack</a>
+    </dt>
+    <dd>Web application environment</dd>
+  </dl>
+  <dl id="repos-caveman" class="repos" data-repos-name="fukamachi/caveman">
+    <dt><a href="http://8arrow.org/caveman/">Caveman</a></dt>
+    <dd>A practical web application framework</dd>
+  </dl>
+  <dl id="repos-ningle" class="repos" data-repos-name="fukamachi/ningle">
+    <dt><a href="http://8arrow.org/ningle/">ningle</a></dt>
+    <dd>A super micro web application framework</dd>
+  </dl>
+  <dl id="repos-cl-dbi" class="repos" data-repos-name="fukamachi/cl-dbi">
+    <dt><a href="http://fukamachi.github.io/cl-dbi/">CL-DBI</a></dt>
+    <dd>Database independent interface</dd>
+  </dl>
+  <dl id="repos-integral" class="repos" data-repos-name="fukamachi/integral">
+    <dt><a href="https://github.com/fukamachi/integral">Integral</a></dt>
+    <dd>An O/R Mapper for Common Lisp</dd>
+  </dl>
+  <dl id="repos-lesque" class="repos" data-repos-name="fukamachi/lesque">
+    <dt><a href="https://github.com/fukamachi/lesque">Lesque</a></dt>
+    <dd>Redis-backed job queueing system</dd>
+  </dl>
+  <dl id="repos-cl-project" class="repos" data-repos-name="fukamachi/cl-project">
+    <dt><a href="https://github.com/fukamachi/cl-project">CL-Project</a></dt>
+    <dd>Modern project skeleton generator</dd>
+  </dl>
+  <dl id="repos-shelly" class="repos" data-repos-name="fukamachi/shelly">
+    <dt><a href="http://shlyfile.org/">Shelly</a></dt>
+    <dd>A tool to run Common Lisp in shell</dd>
+  </dl>
+  <dl id="repos-sxql" class="repos" data-repos-name="fukamachi/sxql">
+    <dt><a href="https://github.com/fukamachi/sxql">SxQL</a></dt>
+    <dd>A SQL generator for Common Lisp</dd>
+  </dl>
+  <dl id="repos-cl-test-more" class="repos" data-repos-name="fukamachi/cl-test-more">
+    <dt><a href="http://fukamachi.github.io/cl-test-more/">CL-TEST-MORE</a></dt>
+    <dd>Yet another unit testing framework</dd>
+  </dl>
+  </div>
 
-  <p>I spend too much money for books.</p>
+  <h2>Web sites</h2>
+  <div class="repos-list">
+  <dl id="repos-quickdocs" class="repos" data-repos-name="fukamachi/quickdocs">
+    <dt><a href="http://quickdocs.org/">Quickdocs</a></dt>
+    <dd>Library documentation hosting for Common Lisp</dd>
+  </dl>
+  </div>
 
-  <p>If you like my products, activities, writings, or photos, a small donation would be really appreciated.</p>
-
-  <ul><li><a href="https://gumroad.com/l/wrp">One-time donation ($3.00USD) from Gumroad</a></li></ul>
-
-  <div style="float: right;"><a href="http://www.amazon.co.jp/registry/wishlist/1748IOLLRMOLP" target="_blank" title="Amazon.co.jp: Wishlist"><img src="images/amazon-banner.png" title="Wishlist" alt="Amazon.co.jp" width="100px" height="64px" /></a></div>
-
-  <p>When you click the right button, it appears Wishlist of Amazon.co.jp, choose from among them for me.</p>
+  <script type="text/javascript">loadStarCounts()</script>
 </div>
+
 
 </div>
 
 <div id="footer">
+  <small>&copy; Eitarow Fukamachi</small>
 </div>
 
 </div>
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
 </body>
 </html>
