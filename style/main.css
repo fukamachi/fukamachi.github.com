@@ -133,6 +133,16 @@ a.icon {
   margin-top: 40px;
 }
 
+#works .screenshot-list img {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 620;
+  460
+}
+#works .screenshot-list dd {
+  margin-top: 10px;
+}
+
 #works .starred {
   display: inline-block;
   margin-left: 15px;
