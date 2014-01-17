@@ -136,8 +136,9 @@ a.icon {
 #works .screenshot-list img {
   border: 1px solid #ccc;
   border-radius: 3px;
-  width: 620;
-  460
+  width: 100%;
+  height: auto;
+  max-width: 620;
 }
 #works .screenshot-list dd {
   margin-top: 10px;
