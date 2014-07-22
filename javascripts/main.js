@@ -55,6 +55,7 @@ var loadFeed = function(feedUrl, containerId, params) {
                 return;
             }
             var container = document.getElementById(containerId).getElementsByClassName('feed')[0];
+            container.setAttribute('class', container.className + ' loaded');
             for (var i = 0; i < result.feed.entries.length; ++i) {
                 var entry = result.feed.entries[i];
                 var div = E('div', { className: 'entry' },
@@ -109,4 +110,25 @@ var addStarCount = function(repos, el) {
         div.appendChild(E('span', { className: 'starred-count' }, ['' + repos['stargazers_count']]));
     }
     el.getElementsByTagName('dt')[0].appendChild(div);
+};
+
+var loading = function() {
+    var loadings = document.getElementsByClassName('loading');
+    var dots = 2;
+    var i = 0;
+    setInterval(function() {
+        var msg = "Loading";
+        for (i=0; i<dots; ++i) {
+            msg = msg + ".";
+        }
+        for (i=0; i<loadings.length; ++i) {
+            loadings[i].innerHTML = msg;
+        }
+        if (dots < 5) {
+            ++dots;
+        }
+        else {
+            dots = 0;
+        }
+    }, 500);
 };

@@ -244,6 +244,9 @@ a.icon {
   position: relative;
   top: 2px;
 }
+.feed.loaded .loading {
+  display: none;
+}
 
 @media (max-width: 767px) {
   #container {
