@@ -188,6 +188,31 @@ a.icon {
   background: #fff;
 }
 
+#donation {
+  padding: 10px 20px;
+  min-height: 70px;
+  border-left: 4px solid rgb(248, 202, 0);
+  font-size: 80%;
+}
+#donation h2 {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 110%;
+  color: rgb(248, 202, 0);
+}
+#donation .message {
+  margin: 0;
+  color: #666;
+}
+#donation .gittip-widget {
+  margin-top: 8px;
+  margin-left: 5px;
+  float: right;
+}
+
+.feed {
+  min-height: 418px;
+}
 .feed .entry {
   margin-bottom: 20px;
 }
@@ -196,10 +221,20 @@ a.icon {
   font-size: 75%;
   color: #aaa;
 }
+.feed .entry .entry-title a {
+  display: inline-block;
+  max-width: 85%;
+  height: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .feed .entry .entry-body {
+  margin-left: 0.5em;
+  height: 3em;
+  overflow: hidden;
   color: #888;
   font-size: 90%;
-  margin-left: 0.5em;
 }
 .feed .entry .entry-bookmark-count {
   display: inline-block;
@@ -238,6 +273,14 @@ a.icon {
     bottom: 0;
     width: 1.1em;
     background: #fff;
+  }
+
+  #donation {
+    padding: 5px 10px 10px;
+  }
+  #donation .message {
+    font-size: 80%;
+    line-height: 130%;
   }
 
   #works dl {
