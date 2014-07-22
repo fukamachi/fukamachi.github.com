@@ -221,13 +221,15 @@ a.icon {
   font-size: 75%;
   color: #aaa;
 }
+.feed .entry .entry-title {
+  white-space: nowrap;
+}
 .feed .entry .entry-title a {
   display: inline-block;
   max-width: 85%;
   height: 1.2em;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .feed .entry .entry-body {
   margin-left: 0.5em;
@@ -260,6 +262,9 @@ a.icon {
     margin: 30px 0 10px 0;
   }
 
+  .feed .entry .entry-title a {
+    max-width: 80%;
+  }
   .feed .entry .entry-body {
     max-height: 4em;
     overflow: hidden;
