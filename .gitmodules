@@ -1,3 +1,9 @@
 [submodule "caveman"]
 	path = caveman
 	url = https://github.com/fukamachi/caveman
+[submodule "ningle"]
+	path = ningle
+	url = https://github.com/fukamachi/ningle
+[submodule "cl-dbi"]
+	path = cl-dbi
+	url = https://github.com/fukamachi/cl-dbi
