@@ -210,7 +210,7 @@ a.icon {
   float: right;
 }
 
-.feed {
+.feed.lazy-load {
   min-height: 418px;
 }
 .feed .entry {
@@ -224,12 +224,20 @@ a.icon {
 .feed .entry .entry-title {
   white-space: nowrap;
 }
+.feed .entry .entry-title.extend {
+  white-space: normal;
+}
 .feed .entry .entry-title a {
   display: inline-block;
   max-width: 85%;
   height: 1.2em;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.feed .entry .entry-title.extend a {
+  display: inline;
+  height: auto;
+  text-overflow: clip;
 }
 .feed .entry .entry-body {
   margin-left: 0.5em;
@@ -246,6 +254,23 @@ a.icon {
 }
 .feed.loaded .loading {
   display: none;
+}
+
+.contribution-media {
+  font-size: 60%;
+  color: #aaa;
+  margin-top: 5px;
+}
+.contribution-media a {
+  color: #459f8f;
+}
+.contribution-media :visited {
+  color: #459f8f;
+}
+
+.other-contributions {
+  color: #888;
+  font-size: 80%;
 }
 
 @media (max-width: 767px) {
