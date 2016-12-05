@@ -1,6 +1,9 @@
 var calculateScore = function() {
   var form = document.getElementsByClassName('calculator-form')[0];
-  var salary = parseInt(form.money.value) || 0;
+  var salary = parseInt(form.money.value);
+  if (salary !== salary) {
+    return null;
+  }
   var loc = form.location.value;
   var isRemote = form.remote.checked;
   var after11 = form.start.checked;
@@ -51,7 +54,7 @@ var calculateScore = function() {
 var onChangeForm = function() {
   var score = calculateScore();
   var scoreContainer = document.getElementsByClassName('result')[0].getElementsByClassName('score-container')[0];
-  document.getElementById('score').innerHTML = score;
+  document.getElementById('score').innerHTML = score === null ? '???' : score;
   if (score < 130) {
     scoreContainer.className = 'score-container bad';
   }
