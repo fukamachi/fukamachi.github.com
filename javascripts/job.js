@@ -78,9 +78,7 @@ var onChangeForm = function() {
     '最低年収': form.money.value + '万円',
     '勤務地': form.location.value === 'inside' ? '関東圏' : 'それ以外',
     'リモートワーク': form.remote.checked ? '可' : '不可',
-    '出社時刻': form.start.value === 'before11' ? '11時より早く'
-      : form.start.value === 'no' ? '問わない'
-      : '11時以降'
+    '出社時刻': form.start.checked ? '11時以降' : '11時より早く'
   };
   var body = '\n\n----- 入力情報 -----\n' + Object.keys(bodyMap).map(function(key) {
     return key + ': ' + this[key];
