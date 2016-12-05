@@ -1,0 +1,329 @@
+@charset "UTF-8";
+
+body {
+  color: #454545;
+  line-height: 150%;
+  font-family: 'Open Sans', 'Arial', 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 120%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #256fba;
+}
+
+a:visited {
+  color: #458fda;
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  width: 100%;
+  border: 2px solid #ddd;
+}
+
+th, td {
+  border: 2px solid #ddd;
+  padding: 10px;
+  font-weight: normal;
+}
+
+th {
+  background-color: #eee;
+}
+
+h1 {
+  font-size: 150%;
+}
+
+h2 {
+  font-size: 130%;
+}
+
+h3 {
+  font-size: 120%;
+}
+
+h4 {
+  font-size: 110%;
+}
+
+input[type="text"] {
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  font-size: 130%;
+}
+
+button {
+  font-size: 100%;
+  background: #f88;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  border-bottom: 5px solid #d66;
+  cursor: pointer;
+}
+
+button a {
+  color: #fff !important;
+}
+
+.section h2 {
+  margin-bottom: 18px;
+}
+
+strong.underline {
+  font-weight: normal;
+  border-bottom: 2px dotted #f88;
+}
+
+.section {
+  margin: 55px 0;
+}
+
+.section.profile {
+  background: #f0f0f0;
+  border: 1px solid #eee;
+  padding: 15px 30px;
+}
+
+.social-buttons {
+  display: table;
+}
+.social-buttons .hatebu,
+.social-buttons .facebook,
+.social-buttons .twitter {
+  display: table-cell;
+  vertical-align: middle;
+}
+.social-buttons .hatebu {
+  padding: 0 30px;
+}
+.social-buttons .hatebu .hatena-bookmark-button-frame {
+  transform: scale(1.4);
+}
+
+#service-links {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#service-links ul {
+  padding: 0;
+}
+
+#service-links ul li {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+#service-links ul li img {
+  height: 40px;
+}
+
+
+#container {
+  width: 700px;
+  margin: 30px auto;
+}
+
+.must, .should, .may {
+  color: #fff;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 85%;
+}
+
+.must {
+  background-color: #f88;
+}
+.should {
+  background-color: #8c8;
+}
+.may {
+  background-color: #aaa;
+}
+
+.section.requirements h3 {
+  margin-top: 35px;
+}
+
+.condition-label-description {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  margin: 10px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.condition-label-description .conditions {
+  padding: 0;
+  list-style: none;
+}
+
+.condition-label-description .conditions .condition {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+
+.condition-label-description .conditions .condition .description:before {
+  content: "······ ";
+}
+.condition-label-description .conditions .condition .description {
+  font-size: 85%;
+}
+
+.condition .condition-brief {
+  display: table;
+}
+.condition .condition-brief .condition-label,
+.condition .condition-brief .condition-one-line-description {
+  display: table-cell;
+}
+
+.condition .condition-brief .condition-label {
+  padding-right: 10px;
+}
+
+.condition .condition-long-description {
+  font-size: 85%;
+  color: #888;
+  margin-bottom: 25px;
+}
+
+.condition .condition-long-description p {
+  margin: 10px 0;
+}
+
+.no-condition {
+  color: #888;
+  font-style: italic;
+}
+
+.calculator-form th {
+  white-space: nowrap;
+}
+.calculator-form th small {
+  font-size: 75%;
+  color: #888;
+}
+
+.calculator-form select[multiple] {
+  width: 150px;
+  font-size: 100%;
+}
+
+.calculator-form input[name="money"] {
+  width: 60px;
+  text-align: right;
+}
+
+.profile .additional-info {
+  font-size: 80%;
+  color: #888;
+  display: inline-block;
+  font-weight: normal;
+}
+.profile .additional-info .link,
+.profile .additional-info .location
+{
+  margin-left: 10px;
+}
+.profile .additional-info .fa {
+  margin-right: 0.2em;
+}
+
+.result .score-container {
+  font-size: 180%;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+.result .score-container.good {
+  color: #8c8;
+}
+.result .score-container.bad {
+  color: #f88;
+}
+.result .score-container #score {
+  font-size: 250%;
+}
+
+.arrow-down {
+  text-align: center;
+  font-size: 350%;
+  color: #888;
+}
+
+.section.email {
+  text-align: center;
+}
+
+.section.email button {
+  background-color: #68d;
+  border-bottom: 5px solid #46b;
+}
+.section.email .email-text {
+  font-size: 80%;
+  color: #888;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #container {
+    width: 95%;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+  .calculator-form {
+    margin: 0 auto;
+  }
+}
+
+/* for Small Tablet & Smartphone */
+@media (max-width: 767px) {
+  body {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+  .section {
+    margin: 30px 0;
+  }
+  .profile .additional-info .link {
+    margin: 5px 0 0 0;
+    display: inline-block;
+  }
+  .profile #service-links li {
+    margin: 0 5px;
+  }
+  .condition-label-description .conditions .condition {
+    display: block;
+    text-align: left;
+    margin: 10px 0 0 15px;
+  }
+  .calculator-form {
+    margin: 0 auto;
+  }
+  h1 {
+    line-height: 150%;
+  }
+}
