@@ -309,7 +309,6 @@ strong.underline {
 }
 .news ul li .date {
   font-weight: bold;
-  margin-right: 7px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
