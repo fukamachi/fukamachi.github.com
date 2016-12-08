@@ -279,6 +279,39 @@ strong.underline {
   color: #888;
 }
 
+.section.calculator {
+  position: relative;
+}
+
+.section.calculator .form-close-cover {
+  position: absolute;
+  width: 100%;
+  height: 130%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 250%;
+  line-height: 140%;
+  top: -20px;
+  left: -30px;
+  padding: 50px;
+}
+
+.news ul {
+  list-style: none;
+  padding: 0;
+}
+.news ul li {
+  background-color: #fcf8e3;
+  color: #8a6d3b;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 85%;
+}
+.news ul li .date {
+  font-weight: bold;
+  margin-right: 7px;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
     width: 100%;
