@@ -41,35 +41,28 @@ var toEnglishDateString = function(date) {
 };
 
 var loadFeed = function(feedUrl, containerId, params) {
-    params = params || {
-        numEntries: 3
-    };
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+      var entries = JSON.parse(xhr.responseText).query.results.entry;
+      var container = document.getElementById(containerId).getElementsByClassName('feed')[0];
+      container.setAttribute('class', container.className + ' loaded');
+      for (var i = 0; i < entries.length; ++i) {
+        var entry = entries[i];
+        var div = E('div', { className: 'entry' },
+                    [E('div', { className: 'entry-date' }, [toEnglishDateString(new Date(entry.published))]),
+                     E('div', { className: 'entry-title' }, [
+                       E('a', { href: entry.link[0].href }, [entry.title])
+                     ]),
+                     E('p', { className: 'entry-body' }, [entry.summary.content])]);
+        loadBookmarkCount(div, entry.link[0].href);
 
-    google.load('feeds', '1');
-    google.setOnLoadCallback(function() {
-        var feed = new google.feeds.Feed(feedUrl);
-        feed.setNumEntries(params['numEntries']);
-
-        feed.load(function(result){
-            if (result.error) {
-                return;
-            }
-            var container = document.getElementById(containerId).getElementsByClassName('feed')[0];
-            container.setAttribute('class', container.className + ' loaded');
-            for (var i = 0; i < result.feed.entries.length; ++i) {
-                var entry = result.feed.entries[i];
-                var div = E('div', { className: 'entry' },
-                            [E('div', { className: 'entry-date' }, [toEnglishDateString(new Date(entry.publishedDate))]),
-                             E('div', { className: 'entry-title' }, [
-                                 E('a', { href: entry.link }, [entry.title])
-                             ]),
-                             E('p', { className: 'entry-body' }, [entry.contentSnippet])]);
-                loadBookmarkCount(div, entry.link);
-
-                container.appendChild(div);
-            }
-        });
-    });
+        container.appendChild(div);
+      }
+    }
+  };
+  xhr.open('GET', "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20feed(3)%20where%20url%3D'" + encodeURIComponent(feedUrl) + "'&format=json");
+  xhr.send();
 };
 
 var loadBookmarkCount = function(entryEl, url) {
