@@ -44,24 +44,24 @@ var loadFeed = function(feedUrl, containerId, params) {
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4) {
-      var entries = JSON.parse(xhr.responseText).query.results.entry;
+      var entries = JSON.parse(xhr.responseText).items;
       var container = document.getElementById(containerId).getElementsByClassName('feed')[0];
       container.setAttribute('class', container.className + ' loaded');
-      for (var i = 0; i < entries.length; ++i) {
+      for (var i = 0; i < Math.min(entries.length, 3); ++i) {
         var entry = entries[i];
         var div = E('div', { className: 'entry' },
-                    [E('div', { className: 'entry-date' }, [toEnglishDateString(new Date(entry.published))]),
+                    [E('div', { className: 'entry-date' }, [toEnglishDateString(new Date(entry.pubDate))]),
                      E('div', { className: 'entry-title' }, [
-                       E('a', { href: entry.link[0].href }, [entry.title])
+                       E('a', { href: entry.link }, [entry.title])
                      ]),
-                     E('p', { className: 'entry-body' }, [entry.summary.content])]);
-        loadBookmarkCount(div, entry.link[0].href);
+                     E('p', { className: 'entry-body' }, [entry.description])]);
+        loadBookmarkCount(div, entry.link);
 
         container.appendChild(div);
       }
     }
   };
-  xhr.open('GET', "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20feed(3)%20where%20url%3D'" + encodeURIComponent(feedUrl) + "'&format=json");
+  xhr.open('GET', "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feedUrl));
   xhr.send();
 };
 
