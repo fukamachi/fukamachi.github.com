@@ -67,8 +67,8 @@ var loadFeed = function(feedUrl, containerId, params) {
 
 var loadBookmarkCount = function(entryEl, url) {
     var span = E('span', { className: 'entry-bookmark-count' }, [
-        E('a', { href: 'http://b.hatena.ne.jp/entry/' + encodeURI(url.replace(/^https?:\/\//, '')), className: 'hatena-bookmark-button', 'data-hatena-bookmark-layout': 'simple-balloon' }, [
-            E('img', { src: 'http://b.st-hatena.com/images/entry-button/button-only@2x.png', width: 20, height: 20, style: 'border: none;' })
+        E('a', { href: 'https://b.hatena.ne.jp/entry/' + encodeURI(url.replace(/^https?:\/\//, '')), className: 'hatena-bookmark-button', 'data-hatena-bookmark-layout': 'simple-balloon' }, [
+            E('img', { src: 'https://b.st-hatena.com/images/entry-button/button-only@2x.png', width: 20, height: 20, style: 'border: none;' })
         ])]);
     entryEl.getElementsByClassName('entry-title')[0].appendChild(span);
 };
