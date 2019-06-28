@@ -39,9 +39,22 @@ p {
 #header {
   display: block;
   width: 100%;
-  height: 100px;
-  text-align: center;
-  padding-top: 80px;
+  padding: 80px 0 30px;
+}
+
+#header .profile-image {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+#header .profile-image img {
+  position: absolute;
+  left: -20px;
+  width: 340px;
+  height: auto;
 }
 
 #footer {
@@ -83,7 +96,6 @@ a.icon {
 #about .name .english {
   color: #bbb;
   font-size: 80%;
-  font-style: italic;
 }
 
 #about p {
@@ -103,6 +115,7 @@ a.icon {
 #service-links ul li {
   display: inline-block;
   width: 50px;
+  margin: 0 3px;
   text-align: center;
 }
 

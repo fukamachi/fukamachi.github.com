@@ -47,7 +47,7 @@ var loadFeed = function(feedUrl, containerId, params) {
       var entries = JSON.parse(xhr.responseText).items;
       var container = document.getElementById(containerId).getElementsByClassName('feed')[0];
       container.setAttribute('class', container.className + ' loaded');
-      for (var i = 0; i < Math.min(entries.length, 3); ++i) {
+      for (var i = 0; i < Math.min(entries.length, params['count'] || 3); ++i) {
         var entry = entries[i];
         var div = E('div', { className: 'entry' },
                     [E('div', { className: 'entry-date' }, [toEnglishDateString(new Date(entry.pubDate))]),

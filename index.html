@@ -13,7 +13,9 @@
 <div id="container">
 
 <div id="header">
-  <img src="images/profile.png" alt="fukamachi’s portfolio">
+  <div class="profile-image">
+    <img class="profile-image" src="images/me.jpg" alt="fukamachi’s portfolio">
+  </div>
 </div>
 
 <div id="content">
@@ -40,7 +42,7 @@
   <h2><a href="https://blog.8arrow.org/">Technical Blog</a></h2>
   <div class="feed lazy-load">
     <div class="loading">Loading..</div>
-    <script type="text/javascript">loadFeed('https://blog.8arrow.org/feed', 'tech-blog');</script>
+    <script type="text/javascript">loadFeed('https://blog.8arrow.org/feed', 'tech-blog', { count: 5 });</script>
     <noscript>
       <ul>
         <li><a href="https://blog.8arrow.org/">八発白中</a></li>
@@ -49,6 +51,7 @@
   </div>
 </div>
 
+<!--
 <div id="diary">
   <h2><a href="https://nitro-idiot.hatenablog.com/">Diary</a></h2>
   <div class="feed lazy-load">
@@ -62,9 +65,26 @@
   </div>
 </div>
 <script type="text/javascript">loading();</script>
+-->
 
 <div id="contribution" class="section feed">
-  <h2>Contributions</h2>
+  <h2>Media</h2>
+  <div class="entry">
+    <div class="entry-date">
+      November 08, 2018
+    </div>
+    <div class="entry-title extend">
+      <a href="https://tech.nikkeibp.co.jp/atcl/nxt/column/18/00240/110600020/">
+        異能エンジニアの肖像 ― 会社が僕を選ぶんじゃない、僕が会社を選ぶ
+      </a>
+      <span class="entry-bookmark-count">
+        <a href="http://b.hatena.ne.jp/entry/s/tech.nikkeibp.co.jp/atcl/nxt/column/18/00240/110600020/" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon">
+          <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" width="20" height="20" style="border: none">
+        </a>
+      </span>
+    </div>
+    <div class="contribution-media">at <a href="https://tech.nikkeibp.co.jp/atcl/nxt/column/18/00240/">異能エンジニアの肖像</a> by 日経 xTECH</div>
+  </div>
   <div class="entry">
     <div class="entry-date">
       September 30, 2016
