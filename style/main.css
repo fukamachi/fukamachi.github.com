@@ -39,7 +39,7 @@ p {
 #header {
   display: block;
   width: 100%;
-  padding: 80px 0 30px;
+  padding: 50px 0 30px;
 }
 
 #header .profile-image {
@@ -123,6 +123,50 @@ a.icon {
   height: 40px;
 }
 
+#books {
+  text-align: center;
+}
+
+#books h2 {
+  text-align: left;
+}
+
+#books .book {
+  display: flex;
+  margin-left: 10px;
+}
+
+#books .book .book-image {
+  width: 240px;
+}
+#books .book .book-image img {
+  max-width: 240px;
+}
+
+#books .book .book-description {
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+#books .book .book-description .book-title {
+  font-weight: bold;
+}
+
+#books .book .book-description .book-author {
+  font-size: small;
+}
+
+#books .book .book-description .book-introduction {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+#books .book .book-description .book-published-at {
+  font-size: small;
+  color: #aaa;
+}
+
 #works dl {
   margin-left: 0.5em;
 }
@@ -144,6 +188,10 @@ a.icon {
 
 #works .repos-list {
   margin-top: 40px;
+}
+
+#works #rakugobot img {
+  width: 100%;
 }
 
 #works .screenshot-list img {
