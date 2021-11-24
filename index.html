@@ -32,17 +32,38 @@
 
 <div id="service-links">
   <ul>
-    <li><a href="https://github.com/fukamachi" target="_blank"><img src="images/github-icon.png" alt="GitHub"></a></li>
-    <li><a href="https://blog.8arrow.org/" target="_blank"><img src="images/hatenablog-icon.png" alt="Tech Blog (Japanese)"></a></li>
-    <li><a href="https://twitter.com/nitro_idiot" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a></li>
+    <li><a href="https://github.com/fukamachi" target="_blank"><img src="images/github-icon.png" alt="GitHub" title="GitHub"></a></li>
+    <li><a href="https://fukamachi.hashnode.dev/" target="_blank"><img src="images/hashnode-icon.png" alt="Tech Blog" title="Tech Blog (Hashnode)"></a></li>
+    <li><a href="https://twitter.com/nitro_idiot" target="_blank"><img src="images/twitter-icon.png" alt="Twitter" title="Twitter"></a></li>
   </ul>
+  <div id="sponsor">
+    <div class="sponsor-button">
+      <a href="https://github.com/sponsors/fukamachi" target="_blank"><img src="images/sponsor.png" alt="Sponsor" title="Become a sponsor on GitHub" /></a>
+    </div>
+    <div class="sponsor-message">
+      Become a sponsor to me <br>from $5/mo on GitHub
+    </div>
+  </div>
 </div>
 
 <div id="tech-blog">
-  <h2><a href="https://blog.8arrow.org/">Technical Blog</a></h2>
+  <h2><a href="https://fukamachi.hashnode.dev/">Technical Blog</a></h2>
   <div class="feed lazy-load">
     <div class="loading">Loading..</div>
-    <script type="text/javascript">loadFeed('https://blog.8arrow.org/feed', 'tech-blog', { count: 5 });</script>
+    <script type="text/javascript">loadFeed('https://fukamachi.hashnode.dev/rss.xml', 'tech-blog', { count: 5 });</script>
+    <noscript>
+      <ul>
+        <li><a href="https://fukamachi.hashnode.dev/">fukamachi tech notes</a></li>
+      </ul>
+    </noscript>
+  </div>
+</div>
+
+<div id="tech-blog-ja">
+  <h2><a href="https://blog.8arrow.org/">Japanese Articles</a></h2>
+  <div class="feed lazy-load">
+    <div class="loading">Loading..</div>
+    <script type="text/javascript">loadFeed('https://blog.8arrow.org/feed', 'tech-blog-ja', { count: 3 });</script>
     <noscript>
       <ul>
         <li><a href="https://blog.8arrow.org/">八発白中</a></li>
@@ -50,22 +71,6 @@
     </noscript>
   </div>
 </div>
-
-<!--
-<div id="diary">
-  <h2><a href="https://nitro-idiot.hatenablog.com/">Diary</a></h2>
-  <div class="feed lazy-load">
-    <div class="loading">Loading..</div>
-    <script type="text/javascript">loadFeed('http://nitro-idiot.hatenablog.com/feed', 'diary');</script>
-    <noscript>
-      <ul>
-        <li><a href="http://nitro-idiot.hatenablog.com/">nitro_idiot’s diary</a></li>
-      </ul>
-    </noscript>
-  </div>
-</div>
-<script type="text/javascript">loading();</script>
--->
 
 <div id="contribution" class="section feed">
   <h2>Media</h2>
@@ -132,7 +137,7 @@
     </div>
     <div class="book-description">
       <div class="book-title">
-        Survival Common Lisp
+        Survival Common Lisp (Japanese)
       </div>
       <div class="book-author">by <a href="https://clfreaks.org">clfreaks</a></div>
       <div class="book-introduction">
@@ -187,55 +192,33 @@
     <dt><a href="https://github.com/fukamachi/psychiq">Psychiq</a></dt>
     <dd>Redis-backed background job processing</dd>
   </dl>
-  </div>
-
-  <h2>Programming Language</h2>
-  <div class="repos-list">
-  <dl id="repos-cl21" class="repos" data-repos-name="cl21/cl21">
-    <dt><a href="http://cl21.org/">CL21</a></dt>
-    <dd>An experimental project redesigning Common Lisp</dd>
+  <dl id="repos-rove" class="repos" data-repos-name="fukamachi/rove">
+    <dt><a href="https://github.com/fukamachi/rove">Rove</a></dt>
+    <dd>Yet another Common Lisp testing framework</dd>
+  </dl>
+  <dl id="repos-mondo" class="repos" data-repos-name="fukamachi/mondo">
+    <dt><a href="https://github.com/fukamachi/mondo">mondo</a></dt>
+    <dd>Simple Common Lisp REPL</dd>
   </dl>
   </div>
 
   <h2>Web Products</h2>
   <div class="repos-list">
-    <dl id="rakugobot">
-    <dt><a href="https://rakugobot.com">落語Bot</a></dt>
-    <dd>
-      <a href="https://rakugobot.com"><img src="images/rakugobot.png"></a>
-    </dd>
+    <dl id="repos-quickdocs" class="repos" data-repos-name="fukamachi/quickdocs">
+      <dt><a href="https://quickdocs.org/">Quickdocs</a></dt>
+      <dd>Library documentation hosting for Common Lisp</dd>
     </dl>
-  <dl id="repos-quickdocs" class="repos" data-repos-name="fukamachi/quickdocs">
-    <dt><a href="http://quickdocs.org/">Quickdocs</a></dt>
-    <dd>Library documentation hosting for Common Lisp</dd>
-  </dl>
+    <br>
+    <dl id="rakugobot">
+      <dt><a href="https://rakugobot.com">落語Bot</a></dt>
+      <dd>
+      <a href="https://rakugobot.com"><img src="images/rakugobot.png"></a>
+      </dd>
+    </dl>
   </div>
 
   <script type="text/javascript">loadStarCounts()</script>
-
-  <h2><a href="https://blog.hatena.ne.jp/-/store/theme/-/author/nitro_idiot">HatenaBlog Theme</a></h2>
-  <div class="screenshot-list">
-  <dl>
-    <dt><a href="https://blog.hatena.ne.jp/-/store/theme/11696248318752473050">Writer</a></dt>
-    <dd>
-      <a href="https://blog.hatena.ne.jp/-/store/theme/11696248318752473050">
-        <img src="https://cdn.image.st-hatena.com/image/scale/2468038d40a27ad872d1f12bf75c164b92651790/height=460;version=1;width=620/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Ftheme_screenshot%2F6456658%2F1513927629163422" width="620px" height="460px">
-      </a>
-    </dd>
-  </dl>
-  <dl>
-    <dt>
-      <a href="https://blog.hatena.ne.jp/-/store/theme/11696248318753352739">芭蕉 (Basho)</a>
-    </dt>
-    <dd>
-      <a href="https://blog.hatena.ne.jp/-/store/theme/11696248318753352739">
-        <img src="https://cdn.image.st-hatena.com/image/scale/d2610499f21d4408dea5a0fa40553ae1f1671142/height=460;version=1;width=620/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Ftheme_screenshot%2F6456658%2F1513927629496581" width="620px" height="460px">
-      </a>
-    </dd>
-  </dl>
-  </div>
 </div>
-
 
 </div>
 

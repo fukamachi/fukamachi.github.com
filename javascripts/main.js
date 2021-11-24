@@ -54,7 +54,7 @@ var loadFeed = function(feedUrl, containerId, params) {
                      E('div', { className: 'entry-title' }, [
                        E('a', { href: entry.link }, [entry.title])
                      ]),
-                     E('p', { className: 'entry-body' }, [entry.description])]);
+                     E('p', { className: 'entry-body' }, [entry.description.replace(/<\/?[a-zA-Z]+?>/g, '')])]);
         loadBookmarkCount(div, entry.link);
 
         container.appendChild(div);

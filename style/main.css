@@ -123,6 +123,30 @@ a.icon {
   height: 40px;
 }
 
+#sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sponsor .sponsor-button {
+  max-width: 200px;
+  max-height: 53px;
+  width: 40%;
+}
+#sponsor .sponsor-button img {
+  width: 100%;
+}
+
+#sponsor .sponsor-message {
+  font-size: 80%;
+  color: #999;
+  padding: 10px 20px;
+  text-align: left;
+  line-height: 140%;
+  white-space: nowrap;
+}
+
 #books {
   text-align: center;
 }
@@ -146,7 +170,7 @@ a.icon {
 #books .book .book-description {
   text-align: left;
   padding-top: 10px;
-  padding-left: 20px;
+  padding-left: 35px;
 }
 
 #books .book .book-description .book-title {
@@ -269,10 +293,6 @@ a.icon {
   margin-top: 8px;
   margin-left: 5px;
   float: right;
-}
-
-.feed.lazy-load {
-  min-height: 712.5px;
 }
 .feed .entry {
   margin-bottom: 20px;
