@@ -36,40 +36,80 @@
     <li><a href="https://fukamachi.hashnode.dev/" target="_blank"><img src="images/hashnode-icon.png" alt="Tech Blog" title="Tech Blog (Hashnode)"></a></li>
     <li><a href="https://twitter.com/nitro_idiot" target="_blank"><img src="images/twitter-icon.png" alt="Twitter" title="Twitter"></a></li>
   </ul>
-  <div id="sponsor">
-    <div class="sponsor-button">
-      <a href="https://github.com/sponsors/fukamachi" target="_blank"><img src="images/sponsor.png" alt="Sponsor" title="Become a sponsor on GitHub" /></a>
-    </div>
-    <div class="sponsor-message">
-      Become a sponsor to me <br>from $5/mo on GitHub
-    </div>
-  </div>
 </div>
 
-<div id="tech-blog">
-  <h2><a href="https://fukamachi.hashnode.dev/">Technical Blog</a></h2>
-  <div class="feed lazy-load">
-    <div class="loading">Loading..</div>
-    <script type="text/javascript">loadFeed('https://fukamachi.hashnode.dev/rss.xml', 'tech-blog', { count: 5 });</script>
-    <noscript>
-      <ul>
-        <li><a href="https://fukamachi.hashnode.dev/">fukamachi tech notes</a></li>
-      </ul>
-    </noscript>
+<div id="works" class="section">
+  <h2>Common Lisp Products</h2>
+  <div class="repos-list">
+  <dl id="repos-clack" class="repos" data-repos-name="fukamachi/clack">
+    <dt>
+      <a href="http://clacklisp.org/">Clack</a>
+    </dt>
+    <dd>Web application environment</dd>
+  </dl>
+  <dl id="repos-caveman" class="repos" data-repos-name="fukamachi/caveman">
+    <dt><a href="https://8arrow.org/caveman/">Caveman</a></dt>
+    <dd>A practical web application framework</dd>
+  </dl>
+  <dl id="repos-utopian" class="repos" data-repos-name="fukamachi/utopian">
+    <dt><a href="https://github.com/fukamachi/utopian">Utopian</a></dt>
+    <dd>Next generation of web application framework (experimental)</dd>
+  </dl>
+  <dl id="repos-mito" class="repos" data-repos-name="fukamachi/mito">
+    <dt><a href="https://github.com/fukamachi/mito">Mito</a></dt>
+    <dd>An O/R Mapper with schema versioning</dd>
+  </dl>
+  <dl id="repos-lsx" class="repos" data-repos-name="fukamachi/lsx">
+    <dt><a href="https://github.com/fukamachi/lsx">LSX</a></dt>
+    <dd>Embeddable HTML templating engine with JSX-like syntax</dd>
+  </dl>
+  <dl id="repos-qlot" class="repos" data-repos-name="fukamachi/qlot">
+    <dt><a href="https://github.com/fukamachi/qlot">Qlot</a></dt>
+    <dd>A project-local library installer</dd>
+  </dl>
+  <dl id="repos-woo" class="repos" data-repos-name="fukamachi/woo">
+    <dt><a href="https://github.com/fukamachi/woo">Woo</a></dt>
+    <dd>A fast non-blocking HTTP server on top of libev</dd>
+  </dl>
+  <dl id="repos-dexador" class="repos" data-repos-name="fukamachi/dexador">
+    <dt><a href="https://github.com/fukamachi/dexador">Dexador</a></dt>
+    <dd>A fast HTTP client</dd>
+  </dl>
+  <dl id="repos-psychiq" class="repos" data-repos-name="fukamachi/psychiq">
+    <dt><a href="https://github.com/fukamachi/psychiq">Psychiq</a></dt>
+    <dd>Redis-backed background job processing</dd>
+  </dl>
+  <dl id="repos-rove" class="repos" data-repos-name="fukamachi/rove">
+    <dt><a href="https://github.com/fukamachi/rove">Rove</a></dt>
+    <dd>Yet another Common Lisp testing framework</dd>
+  </dl>
+  <dl id="repos-mondo" class="repos" data-repos-name="fukamachi/mondo">
+    <dt><a href="https://github.com/fukamachi/mondo">mondo</a></dt>
+    <dd>Simple Common Lisp REPL</dd>
+  </dl>
+  <dl id="repos-mallet" class="repos" data-repos-name="fukamachi/mallet">
+    <dt><a href="https://github.com/fukamachi/mallet">Mallet</a></dt>
+    <dd>A sensible Common Lisp linter that catches real mistakes, not style</dd>
+  </dl>
   </div>
-</div>
 
-<div id="tech-blog-ja">
-  <h2><a href="https://8arrow.hatenablog.com/">Japanese Articles</a></h2>
-  <div class="feed lazy-load">
-    <div class="loading">Loading..</div>
-    <script type="text/javascript">loadFeed('https://8arrow.hatenablog.com/feed', 'tech-blog-ja', { count: 3 });</script>
-    <noscript>
-      <ul>
-        <li><a href="https://8arrow.hatenablog.com/">八発白中</a></li>
-      </ul>
-    </noscript>
+  <h2>Web Products</h2>
+  <div class="repos-list">
+    <dl id="repos-quickdocs" class="repos" data-repos-name="fukamachi/quickdocs">
+      <dt><a href="https://quickdocs.org/">Quickdocs</a></dt>
+      <dd>Library documentation hosting for Common Lisp</dd>
+    </dl>
   </div>
+
+  <h2>Others</h2>
+  <div class="repos-list">
+    <dl id="repos-others" class="repos" data-repos-name="fukamachi/dockerfiles">
+      <dt><a href="https://github.com/fukamachi/dockerfiles">dockerfiles</a></dt>
+      <dd>Dockerfiles for Common Lisp programming</dd>
+    </dl>
+  </div>
+
+  <script type="text/javascript">loadStarCounts()</script>
 </div>
 
 <div id="contribution" class="section feed">
@@ -149,75 +189,6 @@
       </div>
     </div>
   </div>
-</div>
-
-<div id="works" class="section">
-  <h2>Common Lisp Products</h2>
-  <div class="repos-list">
-  <dl id="repos-clack" class="repos" data-repos-name="fukamachi/clack">
-    <dt>
-      <a href="http://clacklisp.org/">Clack</a>
-    </dt>
-    <dd>Web application environment</dd>
-  </dl>
-  <dl id="repos-caveman" class="repos" data-repos-name="fukamachi/caveman">
-    <dt><a href="https://8arrow.org/caveman/">Caveman</a></dt>
-    <dd>A practical web application framework</dd>
-  </dl>
-  <dl id="repos-utopian" class="repos" data-repos-name="fukamachi/utopian">
-    <dt><a href="https://github.com/fukamachi/utopian">Utopian</a></dt>
-    <dd>Next generation of web application framework (experimental)</dd>
-  </dl>
-  <dl id="repos-mito" class="repos" data-repos-name="fukamachi/mito">
-    <dt><a href="https://github.com/fukamachi/mito">Mito</a></dt>
-    <dd>An O/R Mapper with schema versioning</dd>
-  </dl>
-  <dl id="repos-lsx" class="repos" data-repos-name="fukamachi/lsx">
-    <dt><a href="https://github.com/fukamachi/lsx">LSX</a></dt>
-    <dd>Embeddable HTML templating engine with JSX-like syntax</dd>
-  </dl>
-  <dl id="repos-qlot" class="repos" data-repos-name="fukamachi/qlot">
-    <dt><a href="https://github.com/fukamachi/qlot">Qlot</a></dt>
-    <dd>A project-local library installer</dd>
-  </dl>
-  <dl id="repos-woo" class="repos" data-repos-name="fukamachi/woo">
-    <dt><a href="https://github.com/fukamachi/woo">Woo</a></dt>
-    <dd>A fast non-blocking HTTP server on top of libev</dd>
-  </dl>
-  <dl id="repos-dexador" class="repos" data-repos-name="fukamachi/dexador">
-    <dt><a href="https://github.com/fukamachi/dexador">Dexador</a></dt>
-    <dd>A fast HTTP client</dd>
-  </dl>
-  <dl id="repos-psychiq" class="repos" data-repos-name="fukamachi/psychiq">
-    <dt><a href="https://github.com/fukamachi/psychiq">Psychiq</a></dt>
-    <dd>Redis-backed background job processing</dd>
-  </dl>
-  <dl id="repos-rove" class="repos" data-repos-name="fukamachi/rove">
-    <dt><a href="https://github.com/fukamachi/rove">Rove</a></dt>
-    <dd>Yet another Common Lisp testing framework</dd>
-  </dl>
-  <dl id="repos-mondo" class="repos" data-repos-name="fukamachi/mondo">
-    <dt><a href="https://github.com/fukamachi/mondo">mondo</a></dt>
-    <dd>Simple Common Lisp REPL</dd>
-  </dl>
-  </div>
-
-  <h2>Web Products</h2>
-  <div class="repos-list">
-    <dl id="repos-quickdocs" class="repos" data-repos-name="fukamachi/quickdocs">
-      <dt><a href="https://quickdocs.org/">Quickdocs</a></dt>
-      <dd>Library documentation hosting for Common Lisp</dd>
-    </dl>
-    <br>
-    <dl id="rakugobot">
-      <dt><a href="https://rakugobot.com">落語Bot</a></dt>
-      <dd>
-      <a href="https://rakugobot.com"><img src="images/rakugobot.png"></a>
-      </dd>
-    </dl>
-  </div>
-
-  <script type="text/javascript">loadStarCounts()</script>
 </div>
 
 </div>
